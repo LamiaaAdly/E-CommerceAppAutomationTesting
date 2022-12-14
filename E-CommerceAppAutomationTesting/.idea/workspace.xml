@@ -5,52 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be226f84-1684-4d73-875c-c00ed9abd559" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC10AddProductToWishlist.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC11AddProductToCompareList.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC12CreateOrder.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC1Register.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC2Login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC3ResetPassword.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC4Search.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC5SwitchCurrencies.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC6SelectCategories.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC7FilterWithColor.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC8SelectDifferentTags.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SC9AddProductToShoppingCart.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BillingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CompletedPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ConfirmOrderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoggedUserCategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoggedUserHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PaymentInfoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PaymentMethodPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProductTagPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ShippingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ShoppingCartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddProductToCompareListStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddProductToShoppingCartStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddProductToWishlistStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/CreateOrderStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/FilterWithColorStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegisterStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ResetPasswordStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SelectCategoriesStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SelectDifferentTagsStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SwitchCurrenciesStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC12CreateOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC12CreateOrder.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC6SelectCategories.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC6SelectCategories.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/Register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/ResetPassword.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/Search.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/SwitchCurrencies.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoggedUserHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoggedUserHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/RegisterStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/RegisterStepDefinition.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

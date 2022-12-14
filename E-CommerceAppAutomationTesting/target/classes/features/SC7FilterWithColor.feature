@@ -1,6 +1,7 @@
-#SC6- Logged user could select different Categories
-@selectCategories
-Feature: Logged user could select different Categories
+#SC7- Logged user could filter with color
+
+Feature: Logged user could filter with color
+
   Background:user login successfully
 
   #test Scenario 1 login
@@ -13,6 +14,11 @@ Feature: Logged user could select different Categories
 
   #test Scenario 2 select categories
   Scenario: Logged user can select categories
-    When user hover to "Computers"
-    And user select "Notebooks"
+    When user hover to "Apparel"
+    And user select "Shoes"
     Then user go to this category page
+
+  #test Scenario 2 filter with color
+  Scenario: Logged user can filter with color
+    When user select colors
+    Then user see products with selected colors

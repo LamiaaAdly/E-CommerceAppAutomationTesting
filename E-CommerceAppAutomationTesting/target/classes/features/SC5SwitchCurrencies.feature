@@ -1,6 +1,7 @@
-#SC6- Logged user could select different Categories
-@selectCategories
-Feature: Logged user could select different Categories
+#SC5- Logged User could switch between currencies US-Euro
+@switchCurrencies
+Feature: Logged User could switch between currencies US-Euro
+
   Background:user login successfully
 
   #test Scenario 1 login
@@ -11,8 +12,7 @@ Feature: Logged user could select different Categories
     And user click on login button
     Then user go to home page
 
-  #test Scenario 2 select categories
-  Scenario: Logged user can select categories
-    When user hover to "Computers"
-    And user select "Notebooks"
-    Then user go to this category page
+  #test Scenario 2 switch currencies
+  Scenario: Logged user can search
+    When user change customer currency
+    Then product price change

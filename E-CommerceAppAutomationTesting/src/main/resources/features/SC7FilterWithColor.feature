@@ -1,5 +1,5 @@
 #SC7- Logged user could filter with color
-
+@filterwithcolor
 Feature: Logged user could filter with color
 
   Background:user login successfully

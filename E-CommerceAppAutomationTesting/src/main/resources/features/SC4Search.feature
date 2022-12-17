@@ -5,6 +5,7 @@ Feature: Logged user could search for any product
   Background:user login successfully
 
   #test Scenario 1 login
+  @First
   Scenario: User could log in with valid email and password
     Given user open browser
     And user navigates to login page
@@ -13,6 +14,7 @@ Feature: Logged user could search for any product
     Then user go to home page
 
   #test Scenario 2 search
+  @Second
   Scenario: Logged user can search
     When user write "Apple MacBook Pro 13-inch" in search field
     And press search button

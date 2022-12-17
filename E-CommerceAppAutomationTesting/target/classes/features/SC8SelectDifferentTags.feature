@@ -1,5 +1,5 @@
 #SC8- Logged user could select different tags
-
+@selectdifferenttags
 Feature: Logged user could select different tags
 
   Background:user login successfully

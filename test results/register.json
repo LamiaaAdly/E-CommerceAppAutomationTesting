@@ -1,0 +1,64 @@
+[{
+	"source": "user open browser",
+	"steps": [{
+		"name": "user open browser",
+		"aggregatedDurations": {
+			"median": 3.001,
+			"average": 3.001
+		}
+	}]
+}, {
+	"source": "user navigates to register page",
+	"steps": [{
+		"name": "user navigates to register page",
+		"aggregatedDurations": {
+			"median": 1.479,
+			"average": 1.479
+		}
+	}]
+}, {
+	"source": "^user enter data \"(.*)\" , \"(.*)\" , \"(.*)\" , \"(.*)\" and \"(.*)\"$",
+	"steps": [{
+		"name": "user enter data \"Lamiaa\" , \"Adly\" , \"lamiaa.adly09@gmail.com\" , \"MyP@ssword\" and \"MyP@ssword\"",
+		"aggregatedDurations": {
+			"median": 0.495,
+			"average": 0.495
+		}
+	}]
+}, {
+	"source": "user click on register button",
+	"steps": [{
+		"name": "user click on register button",
+		"aggregatedDurations": {
+			"median": 4.094,
+			"average": 4.094
+		}
+	}]
+}, {
+	"source": "user go to register result page",
+	"steps": [{
+		"name": "user go to register result page",
+		"aggregatedDurations": {
+			"median": 0.031,
+			"average": 0.031
+		}
+	}]
+}, {
+	"source": "press continue button",
+	"steps": [{
+		"name": "press continue button",
+		"aggregatedDurations": {
+			"median": 0.766,
+			"average": 0.766
+		}
+	}]
+}, {
+	"source": "user return to home page",
+	"steps": [{
+		"name": "user return to home page",
+		"aggregatedDurations": {
+			"median": 0.009,
+			"average": 0.009
+		}
+	}]
+}]

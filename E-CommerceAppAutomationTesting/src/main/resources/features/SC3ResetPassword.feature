@@ -5,6 +5,7 @@ Feature: User could reset his/her password successfully
   Background:user go to login page and press forget password?
 
   #test Scenario 1 register
+  @First
   Scenario: User could register with valid data
     Given user open browser
     And user navigates to register page
@@ -15,6 +16,7 @@ Feature: User could reset his/her password successfully
     Then user return to home page
 
   #test Scenario 2 resetPassword
+  @Second
   Scenario: User could reset his/her password
     Given user press forget password link
     When user enters "lamiaa.adly09@gmail.com"

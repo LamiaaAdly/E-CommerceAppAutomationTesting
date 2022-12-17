@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import MyDriver.PublicDriver;
 import pages.ResetPasswordPage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -12,15 +13,15 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class ResetPasswordStepDefinition {
     WebDriver driver =null;
     ResetPasswordPage resetPassword;
-
+    Logger logger;
     @Before
     public void user_open_browser() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-
+        driver = PublicDriver.getDriver();
     }
 
     @Given("user press forget password link")
@@ -53,15 +54,20 @@ public class ResetPasswordStepDefinition {
 
     @Then("user read successful message")
     public void successResult(){
+        logger = LoggerFactory.getLogger(ResetPasswordStepDefinition.class);
+        logger.info("Reset Password Result:");
+
         String successResult = resetPassword.successResult().getText();
         System.out.println(successResult);
         Assert.assertTrue("Error in reset password!",
                 successResult.contains("Email with instructions has been sent to you."));
-
+        if(successResult.contains("Email with instructions has been sent to you.")){
+            logger.info("Pass");
+        }else logger.error("Fail reset password");
     }
 
     @After
     public void close_browser(){
-        driver.quit();
+        PublicDriver.quit();
     }
 }

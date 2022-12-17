@@ -1,5 +1,5 @@
 #SC9- Logged user could add different products to Shopping cart.
-
+@addtoShoppingcart
 Feature: Logged user could add different products to Shopping cart
   Background:user login successfully
 

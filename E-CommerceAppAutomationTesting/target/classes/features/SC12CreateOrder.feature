@@ -1,5 +1,5 @@
 #SC12- Create successful Order
-@makesuccessfulorder
+@createsuccessfulorder
 Feature: User create successful Order
   Background:user login successfully
 
@@ -40,5 +40,5 @@ Feature: User create successful Order
     Then user see complete successful order
 
     When user click continue button in complete successful order
-    Then user go to home page
+    Then user go to home page again
 

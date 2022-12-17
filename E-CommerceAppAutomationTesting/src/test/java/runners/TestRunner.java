@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src\\main\\resources\\features",
         glue = "stepDefinitions",
-        tags = "@login"
+        tags = "@createsuccessfulorder",
+        plugin = { "usage" },
+        monochrome = true
 )
 
 public class TestRunner {

@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import MyDriver.PublicDriver;
 import pages.RegisterPage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -12,10 +13,14 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class RegisterStepDefinition {
 
     WebDriver driver =null;
     RegisterPage register;
+    Logger logger;
 
 //    @Before
 //    public void user_open_browser() {
@@ -28,8 +33,7 @@ public class RegisterStepDefinition {
         String chromePath = System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", chromePath);
 
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver = PublicDriver.getDriver();
 
         try {
             Thread.sleep(3000);
@@ -61,10 +65,16 @@ public class RegisterStepDefinition {
 
     @Then("user go to register result page")
     public void registerResult(){
+        logger = LoggerFactory.getLogger(RegisterStepDefinition.class);
+        logger.info("Register Result:");
         String actualResult = register.successResult().getText();
         Assert.assertEquals("Success message Error",
                 "Your registration completed",
                 actualResult);
+        if(actualResult.contains("Your registration completed")){
+            logger.info("Register Success");
+        }else logger.error("Register Fail");
+
     }
 
     @When("press continue button")
@@ -80,7 +90,6 @@ public class RegisterStepDefinition {
 
     @After
     public void close_browser(){
-        try{driver.quit();
-        }catch (NullPointerException e){e.printStackTrace();}
+        PublicDriver.quit();
     }
 }

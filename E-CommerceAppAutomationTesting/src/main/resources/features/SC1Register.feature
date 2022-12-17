@@ -8,7 +8,7 @@ Feature: User could register with valid data
 
   #test Scenario 1
   Scenario: User could register with valid data
-    When user enter data "Lamiaa" , "Adly" , "lamiaa.adly0911@gmail.com" , "MyP@ssword" and "MyP@ssword"
+    When user enter data "Lamiaa" , "Adly" , "lamiaa.adly09@gmail.com" , "MyP@ssword" and "MyP@ssword"
     And user click on register button
     Then user go to register result page
     When press continue button

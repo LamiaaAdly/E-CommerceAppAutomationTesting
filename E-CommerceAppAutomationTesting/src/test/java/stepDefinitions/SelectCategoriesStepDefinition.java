@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import MyDriver.PublicDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -12,16 +13,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import pages.LoggedUserHomePage;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class SelectCategoriesStepDefinition {
     WebDriver driver;
     LoggedUserHomePage loggedUser;
     Actions actions;
     WebElement categoryList, subCategory;
+    Logger logger;
 
     @Before
     public void user_open_browser() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver = PublicDriver.getDriver();
     }
 
     @When("^user hover to \"(.*)\"$")
@@ -39,17 +43,31 @@ public class SelectCategoriesStepDefinition {
         actions.moveToElement(subCategory);
 
         actions.click().build().perform();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Then("user go to this category page")
     public void category_page(){
+        logger = LoggerFactory.getLogger(SelectCategoriesStepDefinition.class);
+        logger.info("Select Category Result:");
+
+        String expecredRes = "https://demo.nopcommerce.com/" + subCategory.getText();
+
         Assert.assertEquals("Select Category error!",
-                "https://demo.nopcommerce.com/" + subCategory.getText(),
-                driver.getCurrentUrl());
+                expecredRes, driver.getCurrentUrl());
+
+        if(expecredRes == driver.getCurrentUrl()){
+            logger.info("Pass");
+        }else logger.error("Fail");
     }
 
-    @After
-    public void close_browser(){
-        driver.quit();
-    }
+//    @After
+//    public void close_browser(){
+//        PublicDriver.quit();
+//    }
 }

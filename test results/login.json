@@ -1,0 +1,100 @@
+[{
+	"source": "user open browser",
+	"steps": [{
+		"name": "user open browser",
+		"aggregatedDurations": {
+			"median": 3.0,
+			"average": 3.0
+		}
+	}]
+}, {
+	"source": "user navigates to register page",
+	"steps": [{
+		"name": "user navigates to register page",
+		"aggregatedDurations": {
+			"median": 1.439,
+			"average": 1.439
+		}
+	}]
+}, {
+	"source": "^user enter data \"(.*)\" , \"(.*)\" , \"(.*)\" , \"(.*)\" and \"(.*)\"$",
+	"steps": [{
+		"name": "user enter data \"Lamiaa\" , \"Adly\" , \"lamiaa.adly09@gmail.com\" , \"MyP@ssword\" and \"MyP@ssword\"",
+		"aggregatedDurations": {
+			"median": 0.493,
+			"average": 0.493
+		}
+	}]
+}, {
+	"source": "user click on register button",
+	"steps": [{
+		"name": "user click on register button",
+		"aggregatedDurations": {
+			"median": 4.619,
+			"average": 4.619
+		}
+	}]
+}, {
+	"source": "user go to register result page",
+	"steps": [{
+		"name": "user go to register result page",
+		"aggregatedDurations": {
+			"median": 0.031,
+			"average": 0.031
+		}
+	}]
+}, {
+	"source": "press continue button",
+	"steps": [{
+		"name": "press continue button",
+		"aggregatedDurations": {
+			"median": 0.975,
+			"average": 0.975
+		}
+	}]
+}, {
+	"source": "user return to home page",
+	"steps": [{
+		"name": "user return to home page",
+		"aggregatedDurations": {
+			"median": 0.009,
+			"average": 0.009
+		}
+	}]
+}, {
+	"source": "user navigates to login page",
+	"steps": [{
+		"name": "user navigates to login page",
+		"aggregatedDurations": {
+			"median": 1.408,
+			"average": 1.408
+		}
+	}]
+}, {
+	"source": "^user enter \"(.*)\" and \"(.*)\"$",
+	"steps": [{
+		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
+		"aggregatedDurations": {
+			"median": 0.167,
+			"average": 0.167
+		}
+	}]
+}, {
+	"source": "user click on login button",
+	"steps": [{
+		"name": "user click on login button",
+		"aggregatedDurations": {
+			"median": 4.339,
+			"average": 4.339
+		}
+	}]
+}, {
+	"source": "user go to home page",
+	"steps": [{
+		"name": "user go to home page",
+		"aggregatedDurations": {
+			"median": 0.047,
+			"average": 0.047
+		}
+	}]
+}]

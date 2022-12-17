@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import MyDriver.PublicDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
@@ -9,14 +10,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoggedUserCategoryPage;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class FilterWithColorStepDefinition {
     WebDriver driver;
     LoggedUserCategoryPage lUserCategory;
-
+    Logger logger;
     @Before
     public void user_open_browser() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver = PublicDriver.getDriver();
     }
 
     @When("user select colors")
@@ -28,15 +31,22 @@ public class FilterWithColorStepDefinition {
 
     @Then("user see products with selected colors")
     public void products_selected_colors(){
+        logger = LoggerFactory.getLogger(FilterWithColorStepDefinition.class);
+        logger.info("Colored product Result:");
+
         String id = lUserCategory.selectedColor().getAttribute("data-option-id");
         String expectedUrl = "https://demo.nopcommerce.com/shoes?viewmode=grid&orderby=0&pagesize=6" +
                 "&specs=" + id;
         Assert.assertEquals("Products with selected colors error!",
                 expectedUrl, driver.getCurrentUrl());
+
+        if(expectedUrl == driver.getCurrentUrl()){
+            logger.info("Pass");
+        }else logger.error("Fail");
     }
 
     @After
     public void close_browser(){
-        driver.quit();
+        PublicDriver.quit();
     }
 }

@@ -6,15 +6,17 @@ Feature: User could log in with valid email and password
     Given user open browser
 
   #test Scenario 1 register
+  @First
   Scenario: User could register with valid data
     Given user navigates to register page
-    When user enter data "Lamiaa" , "Adly" , "lamiaa.adly0911@gmail.com" , "MyP@ssword" and "MyP@ssword"
+    When user enter data "Lamiaa" , "Adly" , "lamiaa.adly09@gmail.com" , "MyP@ssword" and "MyP@ssword"
     And user click on register button
     Then user go to register result page
     When press continue button
     Then user return to home page
 
   #test Scenario 2 login
+  @Second
   Scenario: User could log in with valid email and password
     Given user navigates to login page
     When user enter "lamiaa.adly09@gmail.com" and "MyP@ssword"

@@ -1,0 +1,55 @@
+[{
+	"source": "user open browser",
+	"steps": [{
+		"name": "user open browser",
+		"aggregatedDurations": {
+			"median": 3.001,
+			"average": 3.001
+		}
+	}]
+}, {
+	"source": "user navigates to login page",
+	"steps": [{
+		"name": "user navigates to login page",
+		"aggregatedDurations": {
+			"median": 2.092,
+			"average": 2.092
+		}
+	}]
+}, {
+	"source": "^user enter \"(.*)\" and \"(.*)\"$",
+	"steps": [{
+		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
+		"aggregatedDurations": {
+			"median": 0.169,
+			"average": 0.169
+		}
+	}]
+}, {
+	"source": "user click on login button",
+	"steps": [{
+		"name": "user click on login button",
+		"aggregatedDurations": {
+			"median": 5.186,
+			"average": 5.186
+		}
+	}]
+}, {
+	"source": "user go to home page",
+	"steps": [{
+		"name": "user go to home page",
+		"aggregatedDurations": {
+			"median": 0.059,
+			"average": 0.059
+		}
+	}]
+}, {
+	"source": "user go to shopping cart page",
+	"steps": [{
+		"name": "user go to shopping cart page",
+		"aggregatedDurations": {
+			"median": 3.574,
+			"average": 3.574
+		}
+	}]
+}]

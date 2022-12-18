@@ -63,7 +63,7 @@ public class CreateOrderStepDefinition {
                 "https://demo.nopcommerce.com/onepagecheckout#opc-billing",
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl() == "https://demo.nopcommerce.com/onepagecheckout#opc-billing"){
+        if(driver.getCurrentUrl().equals("https://demo.nopcommerce.com/onepagecheckout#opc-billing")){
             logger.info("Pass");
         }else logger.error("Fail");
     }
@@ -101,7 +101,7 @@ public class CreateOrderStepDefinition {
         Assert.assertEquals("shipping page error", expectedUrl,
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl() == expectedUrl){
+        if(driver.getCurrentUrl().equals(expectedUrl)){
             logger.info("Pass");
         }else logger.error("Fail");
     }
@@ -128,7 +128,7 @@ public class CreateOrderStepDefinition {
         Assert.assertEquals("payment method page error", expectedUrl,
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl() == expectedUrl){
+        if(driver.getCurrentUrl().equals(expectedUrl)){
             logger.info("Pass");
         }else logger.error("Fail");
     }
@@ -154,7 +154,7 @@ public class CreateOrderStepDefinition {
         Assert.assertEquals("payment information page error", expectedUrl,
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl() == expectedUrl){
+        if(driver.getCurrentUrl().equals(expectedUrl)){
             logger.info("Pass");
         }else logger.error("Fail");
     }
@@ -180,7 +180,7 @@ public class CreateOrderStepDefinition {
         Assert.assertEquals("confirm order page error", expectedUrl,
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl() == expectedUrl){
+        if(driver.getCurrentUrl().equals(expectedUrl)){
             logger.info("Pass");
         }else logger.error("Fail");
     }
@@ -206,7 +206,7 @@ public class CreateOrderStepDefinition {
         Assert.assertEquals("complete successful page error", expectedUrl,
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl() == expectedUrl){
+        if(driver.getCurrentUrl().equals(expectedUrl)){
             logger.info("Pass");
         }else logger.error("Fail");
     }
@@ -231,7 +231,7 @@ public class CreateOrderStepDefinition {
         Assert.assertEquals("https://demo.nopcommerce.com/",
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl() == "https://demo.nopcommerce.com/")
+        if(driver.getCurrentUrl().equals("https://demo.nopcommerce.com/"))
             logger.info("Success");
         else logger.error("Fail");
 

@@ -1,0 +1,73 @@
+[{
+	"source": "user open browser",
+	"steps": [{
+		"name": "user open browser",
+		"aggregatedDurations": {
+			"median": 3.001,
+			"average": 3.001
+		}
+	}]
+}, {
+	"source": "user navigates to login page",
+	"steps": [{
+		"name": "user navigates to login page",
+		"aggregatedDurations": {
+			"median": 1.016,
+			"average": 1.016
+		}
+	}]
+}, {
+	"source": "^user enter \"(.*)\" and \"(.*)\"$",
+	"steps": [{
+		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
+		"aggregatedDurations": {
+			"median": 0.171,
+			"average": 0.171
+		}
+	}]
+}, {
+	"source": "user click on login button",
+	"steps": [{
+		"name": "user click on login button",
+		"aggregatedDurations": {
+			"median": 4.44,
+			"average": 4.44
+		}
+	}]
+}, {
+	"source": "user go to home page",
+	"steps": [{
+		"name": "user go to home page",
+		"aggregatedDurations": {
+			"median": 0.028,
+			"average": 0.028
+		}
+	}]
+}, {
+	"source": "user select Add to cart button",
+	"steps": [{
+		"name": "user select Add to cart button",
+		"aggregatedDurations": {
+			"median": 5.596,
+			"average": 5.596
+		}
+	}]
+}, {
+	"source": "user go to product page",
+	"steps": [{
+		"name": "user go to product page",
+		"aggregatedDurations": {
+			"median": 0.679,
+			"average": 0.679
+		}
+	}]
+}, {
+	"source": "user select Add to cart button in product page",
+	"steps": [{
+		"name": "user select Add to cart button in product page",
+		"aggregatedDurations": {
+			"median": 0.049,
+			"average": 0.049
+		}
+	}]
+}]

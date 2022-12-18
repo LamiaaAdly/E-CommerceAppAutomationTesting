@@ -25,7 +25,8 @@ public class AddProductToCompareListStepDefinition {
     }
 
     @When("user select Add to compare list button")
-    public void addToCart_button(){
+    public void addToComp_button(){
+        driver.get("https://demo.nopcommerce.com/");
         loggedUser = new LoggedUserHomePage(driver);
         loggedUser.addToCompareList().click();
 

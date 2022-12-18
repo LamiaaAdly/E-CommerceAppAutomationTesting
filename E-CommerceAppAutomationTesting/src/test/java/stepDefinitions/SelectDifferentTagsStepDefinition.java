@@ -53,7 +53,7 @@ public class SelectDifferentTagsStepDefinition {
                 expectedUrl,
                 driver.getCurrentUrl());
 
-        if(expectedUrl == driver.getCurrentUrl()){
+        if(expectedUrl.equals(driver.getCurrentUrl())){
             logger.info("Pass");
         }else logger.error("Fail");
     }

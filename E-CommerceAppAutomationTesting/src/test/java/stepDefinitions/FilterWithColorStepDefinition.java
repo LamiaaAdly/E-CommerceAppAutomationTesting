@@ -40,7 +40,7 @@ public class FilterWithColorStepDefinition {
         Assert.assertEquals("Products with selected colors error!",
                 expectedUrl, driver.getCurrentUrl());
 
-        if(expectedUrl == driver.getCurrentUrl()){
+        if(expectedUrl.equals(driver.getCurrentUrl())){
             logger.info("Pass");
         }else logger.error("Fail");
     }

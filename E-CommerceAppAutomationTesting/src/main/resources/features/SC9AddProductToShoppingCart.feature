@@ -15,4 +15,6 @@ Feature: Logged user could add different products to Shopping cart
   Scenario: User could add products to Shopping cart
 #    Given user go to any page have product even home page
     When user select Add to cart button
+    Then user go to product page
+    When user select Add to cart button in product page
     Then user success to add selected product to Shopping cart

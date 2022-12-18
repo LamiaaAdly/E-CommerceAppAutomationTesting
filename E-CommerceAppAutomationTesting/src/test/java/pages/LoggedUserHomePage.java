@@ -21,7 +21,7 @@ public class LoggedUserHomePage {
     }
 
     public WebElement changeCurrencyRes(){
-        By changeCurrency = By.cssSelector("div > span[class=\"price actual-price\"]");
+        By changeCurrency = By.cssSelector("div[data-productid=\"4\"]>div>div>div[class=\"prices\"]>span");
         return driver.findElement(changeCurrency);
     }
     //---- Select Category from home page -----//
@@ -37,12 +37,17 @@ public class LoggedUserHomePage {
 
     //---- Add Product from home page to Shopping cart-----//
     public WebElement addToCard(){
-        By addToCard = By.className("product-box-add-to-cart-button");
+        By addToCard = By.cssSelector("div[data-productid=\"4\"]>div>div>div[class=\"buttons\"]>button[class=\"button-2 product-box-add-to-cart-button\"]");
+        return driver.findElement(addToCard);
+    }
+
+    public WebElement addToCardProductP(){
+        By addToCard = By.id("add-to-cart-button-4");
         return driver.findElement(addToCard);
     }
 
     public WebElement addToCartSuccess(){
-        By addToCardSuccess = By.cssSelector("div>p[class=\"content\"]");
+        By addToCardSuccess = By.cssSelector("p[class=\"content\"]");
         return driver.findElement(addToCardSuccess);
     }
     //addtocard select //div>div[class="product-item"] // with product number //data-productid
@@ -53,8 +58,13 @@ public class LoggedUserHomePage {
 
     //---- Add Product from home page to wishlist-----//
     public WebElement addToWishlist(){
-        By addToWishlist = By.className("add-to-wishlist-button");
+        By addToWishlist = By.cssSelector("div[data-productid=\"4\"]>div>div>div[class=\"buttons\"]>button[class=\"button-2 add-to-wishlist-button\"]");
         return driver.findElement(addToWishlist);
+    }
+
+    public WebElement addToWishlistP(){
+        By addToCard = By.id("add-to-wishlist-button-4");
+        return driver.findElement(addToCard);
     }
 
     public WebElement addToWishlistSuccess(){
@@ -69,7 +79,7 @@ public class LoggedUserHomePage {
 
     //---- Add Product from home page to wishlist-----//
     public WebElement addToCompareList(){
-        By addToWishlist = By.className("add-to-compare-list-button");
+        By addToWishlist = By.cssSelector("div[data-productid=\"4\"]>div>div>div[class=\"buttons\"]>button[class=\"button-2 add-to-compare-list-button\"]");
         return driver.findElement(addToWishlist);
     }
 

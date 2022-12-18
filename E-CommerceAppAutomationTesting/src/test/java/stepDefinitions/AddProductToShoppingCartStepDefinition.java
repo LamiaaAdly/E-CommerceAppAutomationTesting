@@ -24,6 +24,7 @@ public class AddProductToShoppingCartStepDefinition {
 
     @When("user select Add to cart button")
     public void addToCart_button(){
+        driver.get("https://demo.nopcommerce.com/");
         loggedUser = new LoggedUserHomePage(driver);
         loggedUser.addToCard().click();
 
@@ -32,6 +33,16 @@ public class AddProductToShoppingCartStepDefinition {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Then("user go to product page")
+    public void go_to_product_page(){
+        Assert.assertEquals("https://demo.nopcommerce.com/apple-macbook-pro-13-inch",
+                driver.getCurrentUrl());
+    }
+    @When("user select Add to cart button in product page")
+    public void Add_to_cart_button_PP(){
+        loggedUser.addToCardProductP().click();
     }
 
     @Then("user success to add selected product to Shopping cart")

@@ -61,13 +61,13 @@ public class SelectCategoriesStepDefinition {
         Assert.assertEquals("Select Category error!",
                 expecredRes, driver.getCurrentUrl());
 
-        if(expecredRes == driver.getCurrentUrl()){
+        if(expecredRes.equals(driver.getCurrentUrl())){
             logger.info("Pass");
         }else logger.error("Fail");
     }
 
-//    @After
-//    public void close_browser(){
-//        PublicDriver.quit();
-//    }
+    @After
+    public void close_browser(){
+        PublicDriver.quit();
+    }
 }

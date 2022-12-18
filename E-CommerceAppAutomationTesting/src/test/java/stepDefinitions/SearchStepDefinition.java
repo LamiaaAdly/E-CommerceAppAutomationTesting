@@ -55,7 +55,7 @@ public class SearchStepDefinition {
         String actualRes = driver.getCurrentUrl();
         Assert.assertEquals("Error in search", expectedRes,actualRes);
 
-        if(expectedRes == actualRes){
+        if(expectedRes.equals(actualRes)){
             logger.info("Pass");
         }else logger.error("Fail");
     }

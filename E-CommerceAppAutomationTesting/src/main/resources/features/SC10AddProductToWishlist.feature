@@ -14,4 +14,6 @@ Feature: Logged user could add different products to Wishlist
   #test Scenario 2 add products to Wishlist
   Scenario: User could add products to Wishlist
     When user select Add to wishlist button
+    Then user go to product page
+    When user select Add to wishlist button in product page
     Then user success to add selected product to wishlist

@@ -32,14 +32,14 @@ public class SwitchCurrenciesStepDefinition {
         Select select = new Select(currencyList);
         String option = select.getFirstSelectedOption().getText();
         System.out.println("Option was "+   option);
-        switch (option){
-            case "US Dollar":
+//        switch (option){
+//            case "US Dollar":
                 select.selectByVisibleText("Euro");
-                break;
-            case "Euro":
-                select.selectByVisibleText("US Dollar");
-                break;
-        }
+//                break;
+//            case "Euro":
+//                select.selectByVisibleText("US Dollar");
+//                break;
+//        }
 
         try {
             Thread.sleep(2000);
@@ -58,16 +58,16 @@ public class SwitchCurrenciesStepDefinition {
         WebElement currencyList = loggedUser.customerCurrencyOption();
         Select select = new Select(currencyList);
         String option = select.getFirstSelectedOption().getText();
-        switch (option){
-            case "US Dollar":
-                Assert.assertTrue("Dollar error",price.contains("$"));
-                logger.info("US Dollar switched success");
-                break;
-            case "Euro":
+//        switch (option){
+//            case "US Dollar":
+//                Assert.assertTrue("Dollar error",price.contains("$"));
+//                logger.info("US Dollar switched success");
+//                break;
+//            case "Euro":
                 Assert.assertTrue("Euro error",price.contains("€"));
                 logger.info("Euro switched success");
-                break;
-        }
+//                break;
+//        }
 
     }
 

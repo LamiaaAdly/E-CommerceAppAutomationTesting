@@ -53,7 +53,7 @@ public class LoginStepDefinition {
             Assert.assertEquals("https://demo.nopcommerce.com/",
                     driver.getCurrentUrl());
 
-            if(driver.getCurrentUrl() == "https://demo.nopcommerce.com/")
+            if(driver.getCurrentUrl().equals("https://demo.nopcommerce.com/"))
                 logger.info("Login success");
             else logger.error("Login fail");
 
@@ -70,8 +70,8 @@ public class LoginStepDefinition {
                     actualResult.contains(expectedResult));
         }
 
-//        @After
-//        public void close_browser(){
-//            PublicDriver.quit();
-//        }
+        @After
+        public void close_browser(){
+            PublicDriver.quit();
+        }
 }

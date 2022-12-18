@@ -23,7 +23,8 @@ public class AddProductToWishlistStepDefinition {
     }
 
     @When("user select Add to wishlist button")
-    public void addToCart_button(){
+    public void addToWish_button(){
+        driver.get("https://demo.nopcommerce.com/");
         loggedUser = new LoggedUserHomePage(driver);
         loggedUser.addToWishlist().click();
 
@@ -32,6 +33,11 @@ public class AddProductToWishlistStepDefinition {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @When("user select Add to wishlist button in product page")
+    public void add_to_wishlist_button_PP(){
+        loggedUser.addToWishlistP().click();
     }
 
     @Then("user success to add selected product to wishlist")

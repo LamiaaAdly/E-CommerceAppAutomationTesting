@@ -12,8 +12,8 @@
 	"steps": [{
 		"name": "user navigates to register page",
 		"aggregatedDurations": {
-			"median": 1.479,
-			"average": 1.479
+			"median": 2.282,
+			"average": 2.282
 		}
 	}]
 }, {
@@ -21,8 +21,8 @@
 	"steps": [{
 		"name": "user enter data \"Lamiaa\" , \"Adly\" , \"lamiaa.adly09@gmail.com\" , \"MyP@ssword\" and \"MyP@ssword\"",
 		"aggregatedDurations": {
-			"median": 0.495,
-			"average": 0.495
+			"median": 0.507,
+			"average": 0.507
 		}
 	}]
 }, {
@@ -30,8 +30,8 @@
 	"steps": [{
 		"name": "user click on register button",
 		"aggregatedDurations": {
-			"median": 4.094,
-			"average": 4.094
+			"median": 4.048,
+			"average": 4.048
 		}
 	}]
 }, {
@@ -39,8 +39,8 @@
 	"steps": [{
 		"name": "user go to register result page",
 		"aggregatedDurations": {
-			"median": 0.031,
-			"average": 0.031
+			"median": 0.029,
+			"average": 0.029
 		}
 	}]
 }, {
@@ -48,8 +48,8 @@
 	"steps": [{
 		"name": "press continue button",
 		"aggregatedDurations": {
-			"median": 0.766,
-			"average": 0.766
+			"median": 3.474,
+			"average": 3.474
 		}
 	}]
 }, {
@@ -57,8 +57,8 @@
 	"steps": [{
 		"name": "user return to home page",
 		"aggregatedDurations": {
-			"median": 0.009,
-			"average": 0.009
+			"median": 0.005,
+			"average": 0.005
 		}
 	}]
 }]

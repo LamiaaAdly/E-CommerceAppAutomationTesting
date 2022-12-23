@@ -12,8 +12,8 @@
 	"steps": [{
 		"name": "user navigates to login page",
 		"aggregatedDurations": {
-			"median": 1.016,
-			"average": 1.016
+			"median": 0.854,
+			"average": 0.854
 		}
 	}]
 }, {
@@ -21,8 +21,8 @@
 	"steps": [{
 		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
 		"aggregatedDurations": {
-			"median": 0.171,
-			"average": 0.171
+			"median": 0.175,
+			"average": 0.175
 		}
 	}]
 }, {
@@ -30,8 +30,8 @@
 	"steps": [{
 		"name": "user click on login button",
 		"aggregatedDurations": {
-			"median": 4.44,
-			"average": 4.44
+			"median": 4.157,
+			"average": 4.157
 		}
 	}]
 }, {
@@ -39,8 +39,8 @@
 	"steps": [{
 		"name": "user go to home page",
 		"aggregatedDurations": {
-			"median": 0.028,
-			"average": 0.028
+			"median": 0.03,
+			"average": 0.03
 		}
 	}]
 }, {
@@ -48,8 +48,8 @@
 	"steps": [{
 		"name": "user select Add to cart button",
 		"aggregatedDurations": {
-			"median": 5.596,
-			"average": 5.596
+			"median": 2.402,
+			"average": 2.402
 		}
 	}]
 }, {
@@ -57,8 +57,8 @@
 	"steps": [{
 		"name": "user go to product page",
 		"aggregatedDurations": {
-			"median": 0.679,
-			"average": 0.679
+			"median": 0.006,
+			"average": 0.006
 		}
 	}]
 }, {
@@ -66,8 +66,17 @@
 	"steps": [{
 		"name": "user select Add to cart button in product page",
 		"aggregatedDurations": {
-			"median": 0.049,
-			"average": 0.049
+			"median": 2.047,
+			"average": 2.047
+		}
+	}]
+}, {
+	"source": "user success to add selected product to Shopping cart",
+	"steps": [{
+		"name": "user success to add selected product to Shopping cart",
+		"aggregatedDurations": {
+			"median": 0.052,
+			"average": 0.052
 		}
 	}]
 }]

@@ -12,8 +12,8 @@
 	"steps": [{
 		"name": "user navigates to login page",
 		"aggregatedDurations": {
-			"median": 2.092,
-			"average": 2.092
+			"median": 1.432,
+			"average": 1.432
 		}
 	}]
 }, {
@@ -21,8 +21,8 @@
 	"steps": [{
 		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
 		"aggregatedDurations": {
-			"median": 0.169,
-			"average": 0.169
+			"median": 0.174,
+			"average": 0.174
 		}
 	}]
 }, {
@@ -30,8 +30,8 @@
 	"steps": [{
 		"name": "user click on login button",
 		"aggregatedDurations": {
-			"median": 5.186,
-			"average": 5.186
+			"median": 5.506,
+			"average": 5.506
 		}
 	}]
 }, {
@@ -39,8 +39,44 @@
 	"steps": [{
 		"name": "user go to home page",
 		"aggregatedDurations": {
-			"median": 0.059,
-			"average": 0.059
+			"median": 0.031,
+			"average": 0.031
+		}
+	}]
+}, {
+	"source": "user select Add to cart button",
+	"steps": [{
+		"name": "user select Add to cart button",
+		"aggregatedDurations": {
+			"median": 3.884,
+			"average": 3.884
+		}
+	}]
+}, {
+	"source": "user go to product page",
+	"steps": [{
+		"name": "user go to product page",
+		"aggregatedDurations": {
+			"median": 0.006,
+			"average": 0.006
+		}
+	}]
+}, {
+	"source": "user select Add to cart button in product page",
+	"steps": [{
+		"name": "user select Add to cart button in product page",
+		"aggregatedDurations": {
+			"median": 2.048,
+			"average": 2.048
+		}
+	}]
+}, {
+	"source": "user success to add selected product to Shopping cart",
+	"steps": [{
+		"name": "user success to add selected product to Shopping cart",
+		"aggregatedDurations": {
+			"median": 0.056,
+			"average": 0.056
 		}
 	}]
 }, {
@@ -48,8 +84,152 @@
 	"steps": [{
 		"name": "user go to shopping cart page",
 		"aggregatedDurations": {
-			"median": 3.574,
-			"average": 3.574
+			"median": 0.509,
+			"average": 0.509
+		}
+	}]
+}, {
+	"source": "user check terms of service checkbox",
+	"steps": [{
+		"name": "user check terms of service checkbox",
+		"aggregatedDurations": {
+			"median": 0.05,
+			"average": 0.05
+		}
+	}]
+}, {
+	"source": "user press checkout button",
+	"steps": [{
+		"name": "user press checkout button",
+		"aggregatedDurations": {
+			"median": 3.481,
+			"average": 3.481
+		}
+	}]
+}, {
+	"source": "user go to billing page",
+	"steps": [{
+		"name": "user go to billing page",
+		"aggregatedDurations": {
+			"median": 0.007,
+			"average": 0.007
+		}
+	}]
+}, {
+	"source": "user fill data",
+	"steps": [{
+		"name": "user fill data",
+		"aggregatedDurations": {
+			"median": 1.695,
+			"average": 1.695
+		}
+	}]
+}, {
+	"source": "user click continue button",
+	"steps": [{
+		"name": "user click continue button",
+		"aggregatedDurations": {
+			"median": 2.055,
+			"average": 2.055
+		}
+	}]
+}, {
+	"source": "user go to shipping page",
+	"steps": [{
+		"name": "user go to shipping page",
+		"aggregatedDurations": {
+			"median": 0.009,
+			"average": 0.009
+		}
+	}]
+}, {
+	"source": "press continue button in shipping page",
+	"steps": [{
+		"name": "press continue button in shipping page",
+		"aggregatedDurations": {
+			"median": 2.041,
+			"average": 2.041
+		}
+	}]
+}, {
+	"source": "user go to payment method page",
+	"steps": [{
+		"name": "user go to payment method page",
+		"aggregatedDurations": {
+			"median": 0.007,
+			"average": 0.007
+		}
+	}]
+}, {
+	"source": "user click continue button in payment method",
+	"steps": [{
+		"name": "user click continue button in payment method",
+		"aggregatedDurations": {
+			"median": 2.04,
+			"average": 2.04
+		}
+	}]
+}, {
+	"source": "user go to payment information page",
+	"steps": [{
+		"name": "user go to payment information page",
+		"aggregatedDurations": {
+			"median": 0.006,
+			"average": 0.006
+		}
+	}]
+}, {
+	"source": "user click continue button in payment information",
+	"steps": [{
+		"name": "user click continue button in payment information",
+		"aggregatedDurations": {
+			"median": 2.041,
+			"average": 2.041
+		}
+	}]
+}, {
+	"source": "user go to confirm order page",
+	"steps": [{
+		"name": "user go to confirm order page",
+		"aggregatedDurations": {
+			"median": 0.006,
+			"average": 0.006
+		}
+	}]
+}, {
+	"source": "user click on confirm button in confirm order",
+	"steps": [{
+		"name": "user click on confirm button in confirm order",
+		"aggregatedDurations": {
+			"median": 2.041,
+			"average": 2.041
+		}
+	}]
+}, {
+	"source": "user see complete successful order",
+	"steps": [{
+		"name": "user see complete successful order",
+		"aggregatedDurations": {
+			"median": 0.006,
+			"average": 0.006
+		}
+	}]
+}, {
+	"source": "user click continue button in complete successful order",
+	"steps": [{
+		"name": "user click continue button in complete successful order",
+		"aggregatedDurations": {
+			"median": 2.477,
+			"average": 2.477
+		}
+	}]
+}, {
+	"source": "user go to home page again",
+	"steps": [{
+		"name": "user go to home page again",
+		"aggregatedDurations": {
+			"median": 0.006,
+			"average": 0.006
 		}
 	}]
 }]

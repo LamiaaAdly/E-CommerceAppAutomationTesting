@@ -11,8 +11,22 @@ public class BillingPage {
         this.driver = driver;
     }
 
+    public WebElement firstName(){
+        By firstName = By.id("BillingNewAddress_FirstName");
+        return driver.findElement(firstName);
+    }
+
+    public WebElement lastName(){
+        By lastName = By.id("BillingNewAddress_LastName");
+        return driver.findElement(lastName);
+    }
+
+    public WebElement email(){
+        By email = By.id("BillingNewAddress_Email");
+        return driver.findElement(email);
+    }
     public WebElement country(){
-        By country = By.id("BillingNewAddress_CountryId");
+        By country = By.cssSelector("select[id=\"BillingNewAddress_CountryId\"]");
         return driver.findElement(country);
     }
 
@@ -36,8 +50,13 @@ public class BillingPage {
         return driver.findElement(phone);
     }
 
+    public WebElement shipSameAddress(){
+        By shipAddress = By.cssSelector("input[id=\"ShipToSameAddress\"]");
+        return driver.findElement(shipAddress);
+    }
+
     public WebElement continueButton(){
-        By continueButton = By.name("save");
+        By continueButton = By.cssSelector("div[id=\"billing-buttons-container\"]>button[name=\"save\"]");
         return driver.findElement(continueButton);
     }
 }

@@ -1,14 +1,10 @@
 package stepDefinitions;
 
-import MyDriver.PublicDriver;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import pages.LoggedUserHomePage;
 
@@ -20,13 +16,15 @@ public class SwitchCurrenciesStepDefinition {
     WebDriver driver;
     LoggedUserHomePage loggedUser;
     Logger logger;
-    @Before
-    public void user_open_browser() {
-        driver = PublicDriver.getDriver();
-    }
+//    @Before
+//    public void user_open_browser() {
+//        driver = hooks.getDriver();
+//    }
 
     @When("user change customer currency")
     public void change_currency(){
+        driver = hooks.getDriver();
+        driver.get("https://demo.nopcommerce.com/");
         loggedUser = new LoggedUserHomePage(driver);
         WebElement currencyList = loggedUser.customerCurrencyOption();
         Select select = new Select(currencyList);
@@ -71,8 +69,8 @@ public class SwitchCurrenciesStepDefinition {
 
     }
 
-    @After
-    public void close_browser(){
-        PublicDriver.quit();
-    }
+//    @After
+//    public void close_browser(){
+//        hooks.quit();
+//    }
 }

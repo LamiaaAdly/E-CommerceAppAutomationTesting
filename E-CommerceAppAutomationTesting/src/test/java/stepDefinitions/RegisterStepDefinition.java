@@ -1,9 +1,6 @@
 package stepDefinitions;
 
-import MyDriver.PublicDriver;
 import pages.RegisterPage;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,7 +8,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +29,7 @@ public class RegisterStepDefinition {
         String chromePath = System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", chromePath);
 
-        driver = PublicDriver.getDriver();
+        driver = hooks.getDriver();
 
         try {
             Thread.sleep(3000);
@@ -88,8 +84,8 @@ public class RegisterStepDefinition {
                 driver.getCurrentUrl());
     }
 
-    @After
-    public void close_browser(){
-        PublicDriver.quit();
-    }
+//    @After
+//    public void close_browser(){
+//        hooks.quit();
+//    }
 }

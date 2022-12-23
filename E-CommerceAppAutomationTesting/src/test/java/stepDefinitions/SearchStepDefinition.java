@@ -1,17 +1,11 @@
 package stepDefinitions;
 
-import MyDriver.PublicDriver;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoggedUserHomePage;
 
 import org.slf4j.Logger;
@@ -23,13 +17,14 @@ public class SearchStepDefinition {
     LoggedUserHomePage loggedUser;
     Logger logger;
 
-    @Before
-    public void user_open_browser() {
-        driver = PublicDriver.getDriver();
-    }
+//    @Before
+//    public void user_open_browser() {
+//        driver = hooks.getDriver();
+//    }
 
     @When("^user write \"(.*)\" in search field$")
     public void write_product_name(String productName){
+        driver = hooks.getDriver();
         loggedUser = new LoggedUserHomePage(driver);
 
         loggedUser.searchTerms().sendKeys(productName);
@@ -51,7 +46,7 @@ public class SearchStepDefinition {
         logger = LoggerFactory.getLogger(SearchStepDefinition.class);
         logger.info("Search Result:");
 
-        String expectedRes = "https://demo.nopcommerce.com/search?q=Apple+MacBook";
+        String expectedRes = "https://demo.nopcommerce.com/search?q=Apple+MacBook+Pro+13-inch";
         String actualRes = driver.getCurrentUrl();
         Assert.assertEquals("Error in search", expectedRes,actualRes);
 
@@ -60,9 +55,9 @@ public class SearchStepDefinition {
         }else logger.error("Fail");
     }
 
-    @After
-    public void close_browser(){
-        PublicDriver.quit();
-    }
+//    @After
+//    public void close_browser(){
+//        hooks.quit();
+//    }
 
 }

@@ -1,0 +1,18 @@
+[main] INFO stepDefinitions.LoginStepDefinition - Login Result:
+[main] INFO stepDefinitions.LoginStepDefinition - Login success
+[main] INFO stepDefinitions.AddProductToShoppingCartStepDefinition - Add to Shopping cart Result:
+[main] INFO stepDefinitions.AddProductToShoppingCartStepDefinition - Adding to shopping cart success
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Billing Page Result:
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Pass
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Shipping Page Result:
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Pass
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Payment Method Page Result:
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Pass
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Payment information Page Result:
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Pass
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Confirm Order Page Result:
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Pass
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Complete Order Page Result:
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Pass
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Order Completion Result:
+[main] INFO stepDefinitions.CreateOrderStepDefinition - Success

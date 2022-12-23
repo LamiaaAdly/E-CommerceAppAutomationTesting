@@ -11,7 +11,7 @@ public class ShippingPage {
     }
 
     public WebElement continueButton(){
-        By continueButton = By.className("shipping-method-next-step-button");
+        By continueButton = By.cssSelector("button[class=\"button-1 shipping-method-next-step-button\"]");
         return driver.findElement(continueButton);
     }
 }

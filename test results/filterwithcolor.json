@@ -3,8 +3,8 @@
 	"steps": [{
 		"name": "user open browser",
 		"aggregatedDurations": {
-			"median": 3.0,
-			"average": 3.0
+			"median": 3.001,
+			"average": 3.001
 		}
 	}]
 }, {
@@ -12,8 +12,8 @@
 	"steps": [{
 		"name": "user navigates to login page",
 		"aggregatedDurations": {
-			"median": 1.357,
-			"average": 1.357
+			"median": 1.499,
+			"average": 1.499
 		}
 	}]
 }, {
@@ -21,8 +21,8 @@
 	"steps": [{
 		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
 		"aggregatedDurations": {
-			"median": 0.172,
-			"average": 0.172
+			"median": 0.203,
+			"average": 0.203
 		}
 	}]
 }, {
@@ -30,8 +30,8 @@
 	"steps": [{
 		"name": "user click on login button",
 		"aggregatedDurations": {
-			"median": 5.173,
-			"average": 5.173
+			"median": 5.299,
+			"average": 5.299
 		}
 	}]
 }, {
@@ -39,8 +39,53 @@
 	"steps": [{
 		"name": "user go to home page",
 		"aggregatedDurations": {
-			"median": 0.025,
-			"average": 0.025
+			"median": 0.031,
+			"average": 0.031
+		}
+	}]
+}, {
+	"source": "user hover to Apparel",
+	"steps": [{
+		"name": "user hover to Apparel",
+		"aggregatedDurations": {
+			"median": 0.377,
+			"average": 0.377
+		}
+	}]
+}, {
+	"source": "user select Shoes",
+	"steps": [{
+		"name": "user select Shoes",
+		"aggregatedDurations": {
+			"median": 2.819,
+			"average": 2.819
+		}
+	}]
+}, {
+	"source": "user go to Shoes category page",
+	"steps": [{
+		"name": "user go to Shoes category page",
+		"aggregatedDurations": {
+			"median": 0.009,
+			"average": 0.009
+		}
+	}]
+}, {
+	"source": "user select colors",
+	"steps": [{
+		"name": "user select colors",
+		"aggregatedDurations": {
+			"median": 5.415,
+			"average": 5.415
+		}
+	}]
+}, {
+	"source": "user see products with selected colors",
+	"steps": [{
+		"name": "user see products with selected colors",
+		"aggregatedDurations": {
+			"median": 0.008,
+			"average": 0.008
 		}
 	}]
 }]

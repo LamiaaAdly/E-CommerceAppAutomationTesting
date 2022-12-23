@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be226f84-1684-4d73-875c-c00ed9abd559" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ShippingAddress.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC10AddProductToWishlist.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC10AddProductToWishlist.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC11AddProductToCompareList.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC11AddProductToCompareList.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC12CreateOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC12CreateOrder.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC3ResetPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC3ResetPassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC6SelectCategories.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC6SelectCategories.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC7FilterWithColor.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC7FilterWithColor.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC8SelectDifferentTags.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC8SelectDifferentTags.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/features/SC9AddProductToShoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/SC9AddProductToShoppingCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyDriver/PublicDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BillingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BillingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoggedUserCategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoggedUserCategoryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoggedUserHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoggedUserHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductTagPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductTagPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ShippingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ShippingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddProductToCompareListStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddProductToCompareListStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddProductToShoppingCartStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddProductToShoppingCartStepDefinition.java" afterDir="false" />
@@ -16,23 +28,43 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/CreateOrderStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/CreateOrderStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/FilterWithColorStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/FilterWithColorStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegisterStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegisterStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ResetPasswordStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ResetPasswordStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SelectCategoriesStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SelectCategoriesStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SelectDifferentTagsStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SelectDifferentTagsStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SwitchCurrenciesStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SwitchCurrenciesStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestResults.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/features/SC10AddProductToWishlist.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/SC10AddProductToWishlist.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/SC11AddProductToCompareList.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/SC11AddProductToCompareList.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/SC12CreateOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/SC12CreateOrder.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/SC6SelectCategories.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/SC6SelectCategories.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/SC7FilterWithColor.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/SC7FilterWithColor.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/SC8SelectDifferentTags.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/SC8SelectDifferentTags.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/features/SC9AddProductToShoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/SC9AddProductToShoppingCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MyDriver/PublicDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/BillingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/BillingPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoggedUserCategoryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoggedUserCategoryPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoggedUserHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoggedUserHomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AddProductToCompareListStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AddProductToCompareListStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AddProductToShoppingCartStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AddProductToShoppingCartStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AddProductToWishlistStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/AddProductToWishlistStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CreateOrderStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CreateOrderStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/FilterWithColorStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/FilterWithColorStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LoginStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LoginStepDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/RegisterStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/RegisterStepDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/ResetPasswordStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/ResetPasswordStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SearchStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SearchStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SelectCategoriesStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SelectCategoriesStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SelectDifferentTagsStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SelectDifferentTagsStepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SwitchCurrenciesStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SwitchCurrenciesStepDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test results/addcomparelist.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test results/addcomparelist.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test results/addshoppingcart.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test results/addshoppingcart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test results/createsuccessfulorder.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test results/createsuccessfulorder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test results/filterwithcolor.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test results/filterwithcolor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test results/register.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test results/register.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test results/selectCategories.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test results/selectCategories.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +110,7 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pages" />
+      <recent name="stepDefinitions" />
       <recent name="Pages" />
     </key>
   </component>
@@ -224,18 +257,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/LoginStepDefinition.java</url>
-          <line>26</line>
+          <line>22</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/RegisterStepDefinition.java</url>
-          <line>72</line>
+          <line>68</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/SwitchCurrenciesStepDefinition.java</url>
-          <line>31</line>
+          <line>29</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/CreateOrderStepDefinition.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/CreateOrderStepDefinition.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/CreateOrderStepDefinition.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/CreateOrderStepDefinition.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/CreateOrderStepDefinition.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

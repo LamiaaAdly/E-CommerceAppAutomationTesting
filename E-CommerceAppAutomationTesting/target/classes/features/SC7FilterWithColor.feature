@@ -1,5 +1,5 @@
 #SC7- Logged user could filter with color
-@filterwithcolor
+@filterWithColor
 Feature: Logged user could filter with color
 
   Background:user login successfully
@@ -14,9 +14,9 @@ Feature: Logged user could filter with color
 
   #test Scenario 2 select categories
   Scenario: Logged user can select categories
-    When user hover to "Apparel"
-    And user select "Shoes"
-    Then user go to this category page
+    When user hover to Apparel
+    And user select Shoes
+    Then user go to Shoes category page
 
   #test Scenario 2 filter with color
   Scenario: Logged user can filter with color

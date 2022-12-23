@@ -1,15 +1,11 @@
 package stepDefinitions;
 
-import MyDriver.PublicDriver;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import pages.LoggedUserHomePage;
 
@@ -23,23 +19,25 @@ public class SelectCategoriesStepDefinition {
     WebElement categoryList, subCategory;
     Logger logger;
 
-    @Before
-    public void user_open_browser() {
-        driver = PublicDriver.getDriver();
-    }
+//    @Before
+//    public void user_open_browser() {
+//        driver = hooks.getDriver();
+//    }
 
-    @When("^user hover to \"(.*)\"$")
-    public void user_hover(String categoryName){
+    @When("user hover to Computers")
+    public void user_hover(){
+        driver = hooks.getDriver();
+        driver.get("https://demo.nopcommerce.com/");
         loggedUser = new LoggedUserHomePage(driver);
 
-        categoryList = loggedUser.categoryList(categoryName);
+        categoryList = loggedUser.categoryList();
         actions = new Actions(driver);
         actions.moveToElement(categoryList);
     }
 
-    @And("^user select \"(.*)\"$")
-    public void user_select(String subCategoryName){
-        subCategory = loggedUser.subCategory(subCategoryName);
+    @And("user select Notebooks")
+    public void user_select(){
+        subCategory = loggedUser.subCategory();
         actions.moveToElement(subCategory);
 
         actions.click().build().perform();
@@ -51,12 +49,12 @@ public class SelectCategoriesStepDefinition {
         }
     }
 
-    @Then("user go to this category page")
+    @Then("user go to Notebooks category page")
     public void category_page(){
         logger = LoggerFactory.getLogger(SelectCategoriesStepDefinition.class);
         logger.info("Select Category Result:");
 
-        String expecredRes = "https://demo.nopcommerce.com/" + subCategory.getText();
+        String expecredRes = "https://demo.nopcommerce.com/notebooks";
 
         Assert.assertEquals("Select Category error!",
                 expecredRes, driver.getCurrentUrl());
@@ -66,8 +64,8 @@ public class SelectCategoriesStepDefinition {
         }else logger.error("Fail");
     }
 
-    @After
-    public void close_browser(){
-        PublicDriver.quit();
-    }
+//    @After
+//    public void close_browser(){
+//        hooks.quit();
+//    }
 }

@@ -8,8 +8,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src\\main\\resources\\features",
         glue = "stepDefinitions",
-        tags = "@addtoShoppingcart",
+        tags = "@resetPassword or @search or @createSuccessfulOrder " +
+                "or @switchCurrencies or @selectCategories or @filterWithColor " +
+                "or @selectDifferentTags " +
+                "or @addToShoppingCart or @addToWishlist or @addCompareList",
         plugin = { "usage" },
+        publish = true,
         monochrome = true
 )
 

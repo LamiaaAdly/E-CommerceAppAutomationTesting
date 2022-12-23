@@ -1,13 +1,9 @@
 package stepDefinitions;
 
-import MyDriver.PublicDriver;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoggedUserHomePage;
 
 import org.slf4j.Logger;
@@ -17,27 +13,35 @@ public class AddProductToWishlistStepDefinition {
     WebDriver driver;
     LoggedUserHomePage loggedUser;
     Logger logger;
-    @Before
-    public void user_open_browser() {
-        driver = PublicDriver.getDriver();
-    }
+//    @Before
+//    public void user_open_browser() {
+//        driver = hooks.getDriver();
+//    }
 
     @When("user select Add to wishlist button")
     public void addToWish_button(){
-        driver.get("https://demo.nopcommerce.com/");
-        loggedUser = new LoggedUserHomePage(driver);
-        loggedUser.addToWishlist().click();
+        driver = hooks.getDriver();
+        if(driver!= null) {
+            driver.get("https://demo.nopcommerce.com/");
+            loggedUser = new LoggedUserHomePage(driver);
+            loggedUser.addToWishlist().click();
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
     @When("user select Add to wishlist button in product page")
     public void add_to_wishlist_button_PP(){
         loggedUser.addToWishlistP().click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Then("user success to add selected product to wishlist")
@@ -58,11 +62,11 @@ public class AddProductToWishlistStepDefinition {
         }else logger.error("Fail adding to list!");
     }
 
-    @After
-    public void close_browser(){
-//        driver.quit();
-//        driver = PublicDriver.getDriver();
-        PublicDriver.quit();
-    }
+//    @After
+//    public void close_browser(){
+////        driver.quit();
+////        driver = PublicDriver.getDriver();
+//        hooks.quit();
+//    }
 
 }

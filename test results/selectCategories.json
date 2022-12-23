@@ -3,8 +3,8 @@
 	"steps": [{
 		"name": "user open browser",
 		"aggregatedDurations": {
-			"median": 3.0,
-			"average": 3.0
+			"median": 3.001,
+			"average": 3.001
 		}
 	}]
 }, {
@@ -12,8 +12,8 @@
 	"steps": [{
 		"name": "user navigates to login page",
 		"aggregatedDurations": {
-			"median": 0.932,
-			"average": 0.932
+			"median": 0.939,
+			"average": 0.939
 		}
 	}]
 }, {
@@ -21,8 +21,8 @@
 	"steps": [{
 		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
 		"aggregatedDurations": {
-			"median": 0.173,
-			"average": 0.173
+			"median": 0.174,
+			"average": 0.174
 		}
 	}]
 }, {
@@ -30,8 +30,8 @@
 	"steps": [{
 		"name": "user click on login button",
 		"aggregatedDurations": {
-			"median": 4.39,
-			"average": 4.39
+			"median": 4.865,
+			"average": 4.865
 		}
 	}]
 }, {
@@ -39,8 +39,35 @@
 	"steps": [{
 		"name": "user go to home page",
 		"aggregatedDurations": {
-			"median": 0.013,
-			"average": 0.013
+			"median": 0.011,
+			"average": 0.011
+		}
+	}]
+}, {
+	"source": "user hover to Computers",
+	"steps": [{
+		"name": "user hover to Computers",
+		"aggregatedDurations": {
+			"median": 0.403,
+			"average": 0.403
+		}
+	}]
+}, {
+	"source": "user select Notebooks",
+	"steps": [{
+		"name": "user select Notebooks",
+		"aggregatedDurations": {
+			"median": 2.804,
+			"average": 2.804
+		}
+	}]
+}, {
+	"source": "user go to Notebooks category page",
+	"steps": [{
+		"name": "user go to Notebooks category page",
+		"aggregatedDurations": {
+			"median": 0.009,
+			"average": 0.009
 		}
 	}]
 }]

@@ -24,14 +24,25 @@ public class LoggedUserHomePage {
         By changeCurrency = By.cssSelector("div[data-productid=\"4\"]>div>div>div[class=\"prices\"]>span");
         return driver.findElement(changeCurrency);
     }
-    //---- Select Category from home page -----//
-    public WebElement categoryList(String categoryName){
-        By categoryList = By.cssSelector("ul>li>a[href = \"/"+ categoryName +"\"]"); // main list is "div> ul[class="top-menu notmobile"]"
+    //---- Select Category "Apparel --> Shoes" from home page -----//
+    public WebElement categoryList_Apparel(){
+        By categoryList = By.cssSelector("ul[class=\"top-menu notmobile\"]>li>a[href=\"/apparel\"]"); // main list is "div> ul[class="top-menu notmobile"]"
         return driver.findElement(categoryList);
     }
 
-    public WebElement subCategory(String subCategoryName){
-        By subCategory = By.cssSelector("ul>li>a[href=\"/"+ subCategoryName +"\"]");
+    public WebElement subCategory_Shoes(){
+        By subCategory = By.cssSelector("ul[class=\"top-menu notmobile\"]>li>ul[class=\"sublist first-level\"]>li>a[href=\"/shoes\"]");
+        return driver.findElement(subCategory);
+    }
+
+    //---- Select Category "Computer --> notebooks" from home page -----//
+    public WebElement categoryList(){
+        By categoryList = By.cssSelector("ul[class=\"top-menu notmobile\"]>li>a[href=\"/computers\"]"); // main list is "div> ul[class="top-menu notmobile"]"
+        return driver.findElement(categoryList);
+    }
+
+    public WebElement subCategory(){
+        By subCategory = By.cssSelector("ul[class=\"top-menu notmobile\"]>li>ul[class=\"sublist first-level\"]>li>a[href=\"/notebooks\"]");
         return driver.findElement(subCategory);
     }
 
@@ -47,7 +58,7 @@ public class LoggedUserHomePage {
     }
 
     public WebElement addToCartSuccess(){
-        By addToCardSuccess = By.cssSelector("p[class=\"content\"]");
+        By addToCardSuccess = By.cssSelector("div[class=\"bar-notification success\"]>p[class=\"content\"]");
         return driver.findElement(addToCardSuccess);
     }
     //addtocard select //div>div[class="product-item"] // with product number //data-productid

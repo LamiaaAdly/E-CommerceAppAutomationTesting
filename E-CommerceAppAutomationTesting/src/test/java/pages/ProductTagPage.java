@@ -11,8 +11,8 @@ public class ProductTagPage {
         this.driver = driver;
     }
 
-    public WebElement productTag(String productTagName){
-        By productTag = By.cssSelector("ul[class=\"product-tags-list\"]>li>a[href=\"/"+ productTagName +"\"]");
+    public WebElement productTag(){
+        By productTag = By.cssSelector("ul[class=\"product-tags-list\"]>li>a[href=\"/awesome\"]");
         return driver.findElement(productTag);
     }
 }

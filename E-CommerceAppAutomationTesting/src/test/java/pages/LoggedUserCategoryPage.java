@@ -13,7 +13,7 @@ public class LoggedUserCategoryPage {
     }
 
     public WebElement selectedColor(){
-        By selectedColor = By.cssSelector("ul>li>input[id=\"attribute-option-15\"]");
+        By selectedColor = By.cssSelector("input[id=\"attribute-option-15\"]");
         return driver.findElement(selectedColor);
     }
 }

@@ -3,8 +3,8 @@
 	"steps": [{
 		"name": "user open browser",
 		"aggregatedDurations": {
-			"median": 3.001,
-			"average": 3.001
+			"median": 10.156,
+			"average": 10.156
 		}
 	}]
 }, {
@@ -12,8 +12,8 @@
 	"steps": [{
 		"name": "user navigates to login page",
 		"aggregatedDurations": {
-			"median": 1.407,
-			"average": 1.407
+			"median": 2.079,
+			"average": 2.079
 		}
 	}]
 }, {
@@ -21,8 +21,8 @@
 	"steps": [{
 		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
 		"aggregatedDurations": {
-			"median": 0.177,
-			"average": 0.177
+			"median": 0.175,
+			"average": 0.175
 		}
 	}]
 }, {
@@ -30,8 +30,8 @@
 	"steps": [{
 		"name": "user click on login button",
 		"aggregatedDurations": {
-			"median": 5.095,
-			"average": 5.095
+			"median": 5.536,
+			"average": 5.536
 		}
 	}]
 }, {
@@ -39,8 +39,26 @@
 	"steps": [{
 		"name": "user go to home page",
 		"aggregatedDurations": {
-			"median": 0.026,
-			"average": 0.026
+			"median": 0.043,
+			"average": 0.043
+		}
+	}]
+}, {
+	"source": "user select Add to compare list button",
+	"steps": [{
+		"name": "user select Add to compare list button",
+		"aggregatedDurations": {
+			"median": 2.42,
+			"average": 2.42
+		}
+	}]
+}, {
+	"source": "user success to add selected product to compare list",
+	"steps": [{
+		"name": "user success to add selected product to compare list",
+		"aggregatedDurations": {
+			"median": 0.054,
+			"average": 0.054
 		}
 	}]
 }]

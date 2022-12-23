@@ -1,9 +1,6 @@
 package stepDefinitions;
 
-import MyDriver.PublicDriver;
 import pages.ResetPasswordPage;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -11,7 +8,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,13 +15,14 @@ public class ResetPasswordStepDefinition {
     WebDriver driver =null;
     ResetPasswordPage resetPassword;
     Logger logger;
-    @Before
-    public void user_open_browser() {
-        driver = PublicDriver.getDriver();
-    }
+//    @Before
+//    public void user_open_browser() {
+//        driver = hooks.getDriver();
+//    }
 
     @Given("user press forget password link")
     public void press_forget_password(){
+        driver = hooks.getDriver();
         resetPassword = new ResetPasswordPage(driver);
         //go to login page
         driver.get("https://demo.nopcommerce.com/login?returnUrl=%2F");
@@ -66,8 +63,8 @@ public class ResetPasswordStepDefinition {
         }else logger.error("Fail reset password");
     }
 
-    @After
-    public void close_browser(){
-        PublicDriver.quit();
-    }
+//    @After
+//    public void close_browser(){
+//        hooks.quit();
+//    }
 }

@@ -1,0 +1,64 @@
+[{
+	"source": "user open browser",
+	"steps": [{
+		"name": "user open browser",
+		"aggregatedDurations": {
+			"median": 3.001,
+			"average": 3.001
+		}
+	}]
+}, {
+	"source": "user navigates to login page",
+	"steps": [{
+		"name": "user navigates to login page",
+		"aggregatedDurations": {
+			"median": 1.469,
+			"average": 1.469
+		}
+	}]
+}, {
+	"source": "^user enter \"(.*)\" and \"(.*)\"$",
+	"steps": [{
+		"name": "user enter \"lamiaa.adly09@gmail.com\" and \"MyP@ssword\"",
+		"aggregatedDurations": {
+			"median": 0.172,
+			"average": 0.172
+		}
+	}]
+}, {
+	"source": "user click on login button",
+	"steps": [{
+		"name": "user click on login button",
+		"aggregatedDurations": {
+			"median": 5.298,
+			"average": 5.298
+		}
+	}]
+}, {
+	"source": "user go to home page",
+	"steps": [{
+		"name": "user go to home page",
+		"aggregatedDurations": {
+			"median": 0.028,
+			"average": 0.028
+		}
+	}]
+}, {
+	"source": "user change customer currency",
+	"steps": [{
+		"name": "user change customer currency",
+		"aggregatedDurations": {
+			"median": 3.11,
+			"average": 3.11
+		}
+	}]
+}, {
+	"source": "product price change",
+	"steps": [{
+		"name": "product price change",
+		"aggregatedDurations": {
+			"median": 0.093,
+			"average": 0.093
+		}
+	}]
+}]

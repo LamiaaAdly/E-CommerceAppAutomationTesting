@@ -1,5 +1,5 @@
 #SC11- Logged user could add different products to compare list
-@addcomparelist
+@addCompareList
 Feature: Logged user could add different products to compare list
   Background:user login successfully
 

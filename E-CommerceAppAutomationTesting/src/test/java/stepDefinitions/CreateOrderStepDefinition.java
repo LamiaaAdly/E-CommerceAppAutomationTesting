@@ -1,15 +1,13 @@
 package stepDefinitions;
 
-import MyDriver.PublicDriver;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.*;
 
@@ -22,18 +20,20 @@ public class CreateOrderStepDefinition {
     ShoppingCartPage shoppingCart;
     BillingPage billingPage;
     ShippingPage shippingPage;
+    ShippingAddress shippingAddress;
     PaymentMethodPage paymentMethodPage;
     PaymentInfoPage paymentInfoPage;
     ConfirmOrderPage confirmOrderPage;
     CompletedPage completedPage;
     Logger logger;
-    @Before
-    public void user_open_browser() {
-        driver = PublicDriver.getDriver();
-    }
+//    @Before
+//    public void user_open_browser() {
+//        driver = hooks.getDriver();
+//    }
 
     @Given("user go to shopping cart page")
     public void shoppingCartPage(){
+        driver = hooks.getDriver();
         driver.get("https://demo.nopcommerce.com/cart");
     }
 
@@ -59,11 +59,13 @@ public class CreateOrderStepDefinition {
         logger = LoggerFactory.getLogger(CreateOrderStepDefinition.class);
         logger.info("Billing Page Result:");
 
+        String expectedUrl = "https://demo.nopcommerce.com/onepagecheckout#opc-billing";
+
         Assert.assertEquals("go to billing page error",
-                "https://demo.nopcommerce.com/onepagecheckout#opc-billing",
+                expectedUrl,
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl().equals("https://demo.nopcommerce.com/onepagecheckout#opc-billing")){
+        if(driver.getCurrentUrl().equals(expectedUrl)){
             logger.info("Pass");
         }else logger.error("Fail");
     }
@@ -72,6 +74,31 @@ public class CreateOrderStepDefinition {
     public void fillData(){
         billingPage = new BillingPage(driver);
 
+        try {
+            WebElement addressList = driver.findElement(
+                    By.cssSelector("select[id=\"billing-address-select\"]"));
+            if(addressList.isDisplayed()) {
+                Select billingAddress = new Select(addressList);
+                billingAddress.selectByVisibleText("New Address");
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        billingPage.firstName().clear();
+        billingPage.lastName().clear();
+        billingPage.email().clear();
+        billingPage.firstName().sendKeys("Lamiaa");
+        billingPage.lastName().sendKeys("Adly");
+        billingPage.email().sendKeys("lamiaa.adly09@gmail.com");
         Select countryList = new Select(billingPage.country());
         countryList.selectByVisibleText("Egypt");
 
@@ -79,6 +106,12 @@ public class CreateOrderStepDefinition {
         billingPage.address().sendKeys("October");
         billingPage.postalCode().sendKeys("20005");
         billingPage.phone().sendKeys("0111222333");
+
+        WebElement shipAddress = billingPage.shipSameAddress();
+        if(!shipAddress.isSelected()){
+            shipAddress.click();
+        }
+
     }
 
     @And("user click continue button")
@@ -97,13 +130,37 @@ public class CreateOrderStepDefinition {
         logger = LoggerFactory.getLogger(CreateOrderStepDefinition.class);
         logger.info("Shipping Page Result:");
 
-        String expectedUrl = "https://demo.nopcommerce.com/onepagecheckout#opc-shipping_method";
-        Assert.assertEquals("shipping page error", expectedUrl,
+        String expectedURLShippingAdd = "https://demo.nopcommerce.com/onepagecheckout#opc-shipping";
+        String expectedUrlShippingMethod = "https://demo.nopcommerce.com/onepagecheckout#opc-shipping_method";
+
+        if(driver.getCurrentUrl().equals(expectedURLShippingAdd)){
+            logger = LoggerFactory.getLogger(CreateOrderStepDefinition.class);
+            logger.info("Shipping Address Page Result:");
+
+            Assert.assertEquals("shipping page error", expectedURLShippingAdd,
+                    driver.getCurrentUrl());
+            if(driver.getCurrentUrl().equals(expectedURLShippingAdd)){
+                logger.info("Pass");
+            }else logger.error("Fail");
+
+            shippingAddress = new ShippingAddress(driver);
+
+            shippingAddress.continueButton().click();
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        Assert.assertEquals("shipping page error", expectedUrlShippingMethod,
                 driver.getCurrentUrl());
 
-        if(driver.getCurrentUrl().equals(expectedUrl)){
+        if (driver.getCurrentUrl().equals(expectedUrlShippingMethod)) {
             logger.info("Pass");
-        }else logger.error("Fail");
+        } else logger.error("Fail");
+
     }
 
     @When("press continue button in shipping page")
@@ -237,8 +294,8 @@ public class CreateOrderStepDefinition {
 
     }
 
-    @After
-    public void close_browser(){
-        PublicDriver.quit();
-    }
+//    @After
+//    public void close_browser(){
+//        hooks.quit();
+//    }
 }

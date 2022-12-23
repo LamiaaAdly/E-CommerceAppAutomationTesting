@@ -1,5 +1,5 @@
 #SC8- Logged user could select different tags
-@selectdifferenttags
+@selectDifferentTags
 Feature: Logged user could select different tags
 
   Background:user login successfully
@@ -15,5 +15,5 @@ Feature: Logged user could select different tags
   #test Scenario 2 select different tags
   Scenario: User could select different tags
     Given user go to product tags page
-    When user select "awesome" product tag
+    When user select awesome product tag
     Then user go to selected product tag page

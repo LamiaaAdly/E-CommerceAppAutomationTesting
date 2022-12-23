@@ -1,5 +1,5 @@
 #SC10- Logged user could add different products to Wishlist
-@addtowishlist
+@addToWishlist
 Feature: Logged user could add different products to Wishlist
   Background:user login successfully
 

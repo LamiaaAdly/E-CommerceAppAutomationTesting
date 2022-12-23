@@ -13,6 +13,6 @@ Feature: Logged user could select different Categories
 
   #test Scenario 2 select categories
   Scenario: Logged user can select categories
-    When user hover to "Computers"
-    And user select "Notebooks"
-    Then user go to this category page
+    When user hover to Computers
+    And user select Notebooks
+    Then user go to Notebooks category page
